@@ -10,7 +10,7 @@ export const GalleryCard = (props) => {
   const folderRef = ref(storage, `/${props.gallery}`);
   const [titleImage, setTitleImage] = useState([]);
   const [loading, setLoading] = useState(true);
-  const spinner = <Spinner size="xl" />;
+  const spinner = <Spinner size="xl" m="50%" />;
 
   useEffect(() => {
     listAll(folderRef).then((response) => {

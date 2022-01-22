@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+    <link type="text/css" rel="stylesheet" href="css/lg-zoom.css" />
+    <link type="text/css" rel="stylesheet" href="css/lg-thumbnail.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -28,6 +31,15 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="js/lightgallery.umd.js"></script>
+    <script src="js/plugins/lg-thumbnail.umd.js"></script>
+    <script src="js/plugins/lg-zoom.umd.js"></script>
+    <script type="text/javascript">
+      lightGallery(document.getElementById("lightgallery"), {
+        plugins: [lgZoom, lgThumbnail],
+        speed: 500,
+      });
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
