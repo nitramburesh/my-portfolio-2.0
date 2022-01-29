@@ -29,19 +29,19 @@ ReactDOM.render(
           <Route path="/omne" element={<OMne />} />
           <Route
             path={`/galerie/portrety`}
-            element={<Subgallery galleryPath="portrety" />}
+            element={<Subgallery galleryPath="portrety" name="Portrety" />}
           />
           <Route
             path="/galerie/sport"
-            element={<Subgallery galleryPath="sport" />}
+            element={<Subgallery galleryPath="sport" name="Sport" />}
           />
           <Route
             path="/galerie/svatby"
-            element={<Subgallery galleryPath="svatby" />}
+            element={<Subgallery galleryPath="svatby" name="Svatby" />}
           />
           <Route
             path="/galerie/rodiny"
-            element={<Subgallery galleryPath="rodiny" />}
+            element={<Subgallery galleryPath="rodiny" name="Rodiny" />}
           />
         </Routes>
         <Footer></Footer>

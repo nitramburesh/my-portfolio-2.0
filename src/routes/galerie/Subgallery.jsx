@@ -32,7 +32,6 @@ export const Subgallery = ({ galleryPath, name }) => {
       </Box>
     );
   });
-  console.log(name);
   const gallery =
     <>
       <GoBackBar>{name}</GoBackBar>
