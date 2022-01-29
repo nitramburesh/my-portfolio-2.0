@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { useGlobalState } from "../state/index";
 
@@ -26,22 +26,22 @@ export const NavbarLinks = (props) => {
       gridColumn={props.gridColumn}
       backgroundColor={props.backgroundColor}
     >
-      {/* <Link href="/" placeSelf="center" pr="10px" className="mobile"> */}
-      <Link to="/" onClick={hideMenu}>
+      {/* <NavLink href="/" placeSelf="center" pr="10px" className="mobile"> */}
+      <NavLink to="/" onClick={hideMenu}>
         Domu
-      </Link>
-      {/* <Link to="/Galerie" placeSelf="center" pr="10px"> */}
-      <Link to="/galerie" onClick={hideMenu}>
+      </NavLink>
+      {/* <NavLink to="/Galerie" placeSelf="center" pr="10px"> */}
+      <NavLink to="/galerie" onClick={hideMenu}>
         Galerie
-      </Link>
-      {/* <Link to="/Cenik" placeSelf="center" pr="10px"> */}
-      <Link to="/cenik" onClick={hideMenu}>
+      </NavLink>
+      {/* <NavLink to="/Cenik" placeSelf="center" pr="10px"> */}
+      <NavLink to="/cenik" onClick={hideMenu}>
         Cenik
-      </Link>
-      {/* <Link to="/OMne" placeSelf="center" pr="10px"> */}
-      <Link to="/omne" onClick={hideMenu}>
+      </NavLink>
+      {/* <NavLink to="/OMne" placeSelf="center" pr="10px"> */}
+      <NavLink to="/omne" onClick={hideMenu}>
         O mne
-      </Link>
+      </NavLink>
     </Box>
   );
 };
