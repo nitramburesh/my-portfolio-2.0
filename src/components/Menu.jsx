@@ -1,12 +1,11 @@
-import styled from "styled-components";
-import { Box, IconButton, keyframes, Slide } from "@chakra-ui/react";
+
+import { Box, IconButton, keyframes } from "@chakra-ui/react";
 import { useGlobalState } from "../state/index";
 
 import { NavbarLinks } from "./NavbarLinks";
 import {
   faFacebook,
   faInstagram,
-  faRProject,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,6 +35,7 @@ export const Menu = () => {
   if (isBurgerMenuOpen)
     return (
       <Box
+        zIndex="2"
         position="fixed"
         display="flex"
         flexDirection="column"

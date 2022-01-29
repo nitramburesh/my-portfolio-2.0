@@ -2,7 +2,7 @@ import { createGlobalState } from "react-hooks-global-state";
 
 const { setGlobalState, useGlobalState } = createGlobalState({
   isBurgerMenuOpen: false,
-  clickedGallery: "",
+  goBackTo: "",
 });
 
 export { setGlobalState, useGlobalState };

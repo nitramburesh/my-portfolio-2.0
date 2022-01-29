@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 import firebaseApp from "./firebase/config";
-import { ChakraProvider, propNames } from "@chakra-ui/react";
+import { ChakraProvider, Heading, propNames } from "@chakra-ui/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Galerie } from "./routes/Galerie";
 import { Cenik } from "./routes/Cenik";
@@ -13,11 +13,15 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { Subgallery } from "./routes/galerie/Subgallery";
 
+
+
+
 ReactDOM.render(
   <ChakraProvider>
     <React.StrictMode>
       <BrowserRouter>
         <Navbar />
+
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/galerie" element={<Galerie />} />
