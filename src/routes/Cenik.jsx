@@ -10,7 +10,6 @@ import SendEmailModal from "../components/SendEmailModal";
 
 export const Cenik = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  console.log(isOpen);
   return (
     <>
       <Accordion allowMultiple allowToggle>
